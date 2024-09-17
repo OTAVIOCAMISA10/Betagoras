@@ -53,13 +53,29 @@ body {
     background-color: #e45310;
 }
 
-.event-card, .promo-card {
-    background-image: url(./IMAGENS/dindin.jpg);
+.event-card1 {
+    background-image: url(./IMAGENS/fundofut.png);
     border: 2px solid #ffffff;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 25px;
     background-color: #000000;
+}
+.event-card2{
+  background-image: url(./IMAGENS/fundobas.png);
+  border: 2px solid #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  background-color: #000000;
+}
+.promo-card {
+  background-image: url(./IMAGENS/fundo.png);
+  border: 2px solid #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  background-color: #000000;
 }
 
 footer {
@@ -145,7 +161,7 @@ footer {
     background-image: url(./IMAGENS/cassino.jpg);
     background-size: cover;
     background-position: center;
-    height: 95vh; /* Ajuste o tamanho conforme necessário */
+    height: 60vh; /* Ajuste o tamanho conforme necessário */
     display: flex;
     align-items: center;
     justify-content: center;
