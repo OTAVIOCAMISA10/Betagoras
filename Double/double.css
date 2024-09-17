@@ -1,6 +1,6 @@
 body {
   background-image: url("./imagens_aposta/fundo.jpg");
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,7 +77,7 @@ body {
   background-color: #ff4c4c;
 }
 .white {
-  background-color: #f0f0f0;
+  background-color: #d1cccc;
   color: #000;
 }
 .black {
@@ -156,7 +156,7 @@ body {
   transition: background-color 0.3s, transform 0.2s;
 }
 #backButton:hover {
-  background-color: #2980b9;
+  background-color: #f10d0d;
 }
 #backButton:active {
   transform: scale(0.95);
