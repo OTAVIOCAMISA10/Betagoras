@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #ffffff;
 }
 
 .navbar {
@@ -34,18 +34,6 @@ body {
     margin-left: 10px;
 }
 
-.hero {
-    background: url() ;
-    color: rgb(0, 0, 0);
-    padding: 50px;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
 .primary-btn {
     background-color: #28a745;
     color: #fff;
@@ -55,6 +43,10 @@ body {
     font-size: 16px;
     border-radius: 5px;
 }
+.primary-btn:hover {
+    transform: scale(1.1);
+    color: #000000; /* Cor ao passar o mouse */
+  }
 
 .highlights, .promotions {
     padding: 20px;
@@ -62,11 +54,12 @@ body {
 }
 
 .event-card, .promo-card {
-    border: 1px solid #000000;
+    background-image: url(./IMAGENS/dindin.jpg);
+    border: 2px solid #ffffff;
     padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background-color: #000000;
 }
 
 footer {
@@ -147,11 +140,12 @@ footer {
     color: #fce803;
     transform: translate(0, -0.25rem);
     background-color: rgba(0, 0, 0, 0.5);
-  }.hero {
-    background-image: url('Users/Otávio Augusto/Desktop/Trabalho Front/artigo_historia_da_roleta-1.jpg');
+  }
+  .hero {
+    background-image: url(./IMAGENS/cassino.jpg);
     background-size: cover;
     background-position: center;
-    height: 80vh; /* Ajuste o tamanho conforme necessário */
+    height: 95vh; /* Ajuste o tamanho conforme necessário */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,9 +193,3 @@ footer {
   transform: scale(1.1);
   color: #ff8800; /* Cor ao passar o mouse */
 }
-
-
-
-  
-  
-  

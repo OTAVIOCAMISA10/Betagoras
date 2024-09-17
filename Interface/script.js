@@ -55,4 +55,3 @@ function updateUserBalance() {
     // Atualiza o saldo ao carregar a página
     updateUserBalance();
 });
-
