@@ -1,5 +1,6 @@
 body {
-  background-image: url("./imagens_aposta/fundo.jpg");
+  background-clip: url(./imagens_aposta\fundoclip.mp4);
+  /*background-image: url("./imagens_aposta/fundo.jpg");*/
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   display: flex;
   justify-content: center;
@@ -10,49 +11,64 @@ body {
   margin: 0;
   position: relative;
 }
+
+.background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 50%;
+  min-height: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
 .game-container {
   background: #1c1e21;
   padding: 20px;
   border-radius: 10px;
   width: 650px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px rgb(255, 102, 0);
 }
 .balance-panel {
+  border: 2px rgb(255, 102, 0) solid;
+  width: fit-content;
   position: absolute;
   top: 20px;
   right: 20px;
   background: rgba(255, 255, 255, 0.1);
   padding: 15px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgb(255, 145, 0);
 }
 .balance-panel h3 {
+  float: left;
   margin: 0;
   margin-bottom: 5px;
   font-size: 18px;
+  width: fit-content;
 }
 .balance-info {
-  display: flex;
-  align-items: center;
   margin-bottom: 10px;
+  
 }
 .balance-info span {
-  margin-left: 5px;
+  clear: both;
   font-size: 20px;
   font-weight: bold;
   color: #2ecc71;
 }
 .bet-input {
+  clear: both;
   padding: 8px;
   border-radius: 5px;
   border: none;
-  width: 120px;
+  width: 150px;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 5px;
   outline: none;
 }
@@ -140,13 +156,13 @@ body {
   color: #2ecc71;
 }
 .feedback.lose {
-  color: #e74c3c;
+  color: #c0392b;
 }
 #backButton {
   position: absolute;
   top: 20px;
   left: 20px;
-  background-color: #3498db;
+  background-color: rgb(255, 81, 0);
   color: white;
   padding: 10px 20px;
   font-size: 16px;
@@ -161,3 +177,46 @@ body {
 #backButton:active {
   transform: scale(0.95);
 }
+.loader {
+  float: left;
+  margin: 10px;
+  transform: translateZ(1px);
+}
+
+.loader:after {
+  content: '$';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  background: #FFD700;
+  color: #DAA520;
+  border: 4px double;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .1);
+  animation: coin-flip 10s cubic-bezier(0, 0.8, 0.8, 1) infinite;
+}
+
+@keyframes coin-flip {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.2, 0, 1, 0.5);
+  }
+
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+      
