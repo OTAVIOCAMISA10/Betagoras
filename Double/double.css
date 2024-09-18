@@ -1,12 +1,10 @@
 body {
   background-clip: url(./imagens_aposta\fundoclip.mp4);
-  /*background-image: url("./imagens_aposta/fundo.jpg");*/
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /*background-color: #2c2f33;*/
   color: #ffffff;
   margin: 0;
   position: relative;
