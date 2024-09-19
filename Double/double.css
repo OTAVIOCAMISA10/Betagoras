@@ -98,7 +98,7 @@ body {
   background-color: #4a4a4a;
 }
 #startButton {
-  background-color: #e74c3c;
+  background-color: rgb(255, 81, 0);
   color: white;
   padding: 10px 30px;
   font-size: 18px;
@@ -108,7 +108,7 @@ body {
   transition: background-color 0.3s, transform 0.2s;
 }
 #startButton:hover {
-  background-color: #c0392b;
+  background-color: rgb(168, 53, 0);
 }
 #startButton:active {
   transform: scale(0.95);
@@ -160,7 +160,7 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
-  background-color: rgb(255, 81, 0);
+  background-color: rgb(61, 61, 61);
   color: white;
   padding: 10px 20px;
   font-size: 16px;
@@ -170,7 +170,7 @@ body {
   transition: background-color 0.3s, transform 0.2s;
 }
 #backButton:hover {
-  background-color: #f10d0d;
+  background-color: rgb(255, 81, 0);
 }
 #backButton:active {
   transform: scale(0.95);
