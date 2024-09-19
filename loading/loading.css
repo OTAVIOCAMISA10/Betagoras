@@ -1,5 +1,6 @@
   
   .loader {
+    float: center;
     position: relative;
     width: 164px;
     height: 100px;
@@ -76,28 +77,30 @@
       transform: translate(0, 0);
     }
   }
-
-.loader1  {
-  width: fit-content;
-  font-weight: bold;
-  font-family: monospace;
-  font-size: 30px;
-  background: linear-gradient(90deg,#000 50%,#0000 0) right/200% 100%;
-  animation: l21 2s infinite linear;
-}
-
-.loader1::before {
-  content: "CARREGANDO...";
-  color: #0000;
-  padding: 0 5px;
-  background: inherit;
-  background-image: linear-gradient(90deg,#fff 50%,#000 0);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-@keyframes l21 {
-  100% {
-    background-position: left
+  .loader2 {
+    width: 400px;
+    margin: 80px auto;
+    font-size: 50px;
+    font-weight: bold;
   }
-}
+  #backButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  #backButton:hover {
+    background-color: rgb(255, 81, 0);
+  }
+  #backButton:active {
+    transform: scale(0.95);
+  }
+  
+  

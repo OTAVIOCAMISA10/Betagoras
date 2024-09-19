@@ -1,10 +1,12 @@
-const startButton = document.getElementById("startButton");
 const backButton = document.getElementById("backButton");
 const historyDiv = document.getElementById("history");
-const feedback = document.getElementById("feedback");
+const colors = ["red", "white", "black"];
+const startButton = document.getElementById("startButton");
 const balanceSpan = document.getElementById("balance");
 const betInput = document.getElementById("betAmount");
-const colors = ["red", "white", "black"];
+const feedback = document.getElementById("feedback");
+const cardWrapper = document.querySelector('.card-wrapper');
+const cards = document.querySelectorAll('.card');
 
 let selectedColor = "red"; // Seleção de cor padrão
 let balance = 100.0; // Saldo inicial
@@ -22,6 +24,7 @@ document.querySelectorAll(".color-button").forEach((button) => {
 
 // Iniciar simulação de jogo
 function startGame() {
+  
   const betAmount = parseFloat(betInput.value);
   if (isNaN(betAmount) || betAmount <= 0) {
     alert("Por favor, insira um valor de aposta válido.");
@@ -38,7 +41,8 @@ function startGame() {
     updateBalance(resultColor, betAmount);
     displayFeedback(resultColor);
   }, 500); // Simular atraso para realismo
-};
+}
+
 
 // Adicionar resultado ao histórico
 function addHistoryItem(color) {
