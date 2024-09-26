@@ -353,7 +353,7 @@ body {
 }
 
 .white-bg {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   color: #000;
 }
 
@@ -390,7 +390,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  color: rgb(112, 109, 109);
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 

@@ -19,6 +19,14 @@ body {
     font-weight: bold;
 }
 
+.logo1 {
+  background-image: url(./IMAGENS/logo1.png);
+  width: 50px; /* largura desejada */
+  height: 50px; /*  altura desejada */
+  background-size: contain; 
+
+}
+
 .nav-links {
     list-style: none;
     display: flex;
