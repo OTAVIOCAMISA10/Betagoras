@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double Game</title>
+    <link rel="stylesheet" href="double.css" />
+  </head>
+  <body>
+    <video autoplay muted loop class="background-video">
+      <source src="imagens_aposta/fundoclip.mp4" type="video/mp4" />
+    </video>
+
+    <button id="backButton" onclick="backPage()">Voltar</button>
+    <!-- Botão de Voltar na parte superior esquerda -->
+
+    <div class="balance-panel">
+      <div class="loader"></div>
+      <h3>Seu Saldo</h3>
+      <div class="balance-info">
+        <span>R$</span>
+        <span id="balance">100.00</span>
+      </div>
+      <input
+        type="number"
+        id="betAmount"
+        class="bet-input"
+        placeholder="Valor da aposta"
+        min="1"
+      />
+    </div>
+
+    <div class="game-container">
+      <h2>Double Game</h2>
+      <div class="card-carousel" id="cardCarousel">
+        <div class="card-wrapper" id="cardWrapper">
+          <!-- Cartas numeradas de 1 a 15 -->
+          <div class="card red-bg">1</div>
+          <div class="card black-bg">2</div>
+          <div class="card white-bg"></div>
+          <div class="card red-bg">4</div>
+          <div class="card black-bg">5</div>
+          <div class="card red-bg">6</div>
+          <div class="card black-bg">7</div>
+          <div class="card red-bg">8</div>
+          <div class="card black-bg">9</div>
+          <div class="card red-bg">10</div>
+          <div class="card black-bg">11</div>
+          <div class="card red-bg">12</div>
+          <div class="card black-bg">13</div>
+          <div class="card red-bg">14</div>
+          <div class="card black-bg">15</div>
+        </div>
+        <div class="result-arrow" id="resultArrow"></div>
+      </div>
+      <div class="color-buttons">
+        <button class="color-button red" data-color="red">x2</button>
+        <button class="color-button white" data-color="white">x14</button>
+        <button class="color-button black" data-color="black">x2</button>
+      </div>
+      <button id="startButton" onclick="startGame()">Começar o jogo</button>
+      <div class="feedback" id="feedback"></div>
+      <div class="history" id="history"></div>
+    </div>
+
+    <script src="double.js"></script>
+  </body>
+</html>
