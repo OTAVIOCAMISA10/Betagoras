@@ -6,17 +6,18 @@ body {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Ajuste o padding aqui */
+  background-color: #000000;
 }
 
 .logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap; /* Impede a quebra de linha */
 }
 
 .nav-links {
