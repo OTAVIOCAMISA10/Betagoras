@@ -1,0 +1,125 @@
+/* Fundo gradiente suave */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff6600, #ffd900);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Centraliza e estiliza o contêiner */
+.container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+/* Título estilizado */
+h2 {
+    text-align: center;
+    color: #ff7b00;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Estilo para os rótulos */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Estilo para os campos de entrada */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-size: 14px;
+}
+
+/* Foca no campo de entrada quando clicado */
+input:focus {
+    border-color: #000000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o botão */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Efeito de hover e clique no botão */
+button:hover {
+    background-color: #b37a00;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Mensagem de erro */
+#message {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Link para alternar entre Cadastro e Login */
+.toggle-link {
+    display: block;
+    margin: 20px 0;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.toggle-link:hover {
+    text-decoration: underline;
+}
+
+/* Animação de transição para o container */
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+

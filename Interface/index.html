@@ -13,19 +13,20 @@
     <nav class="navbar">
         <div class="logo">Betágoras</div>
         <ul class="nav-links">
-            <li><a href="#">Início</a></li>
+        
             <li><a href="#">Esportes</a></li>
-            <li><a href="#">Cassino</a></li>
-            <li><a href="#">Suporte</a></li>
+            <li> <a href="/Double/double.html">Cassino</a></li>
+            <li><a href="#">Universitários</a></li>
         </ul>
-        <div class="auth-buttons">
-            <button class="btn login-btn">Entrar</button>
-            <button class="btn register-btn">Cadastrar</button>
-        </div>
+
         <!-- Aba de usuário -->
-        <div class="user-panel">
-            <span>Saldo <span id="user-balance">100.00</span></span>
-            <button class="btn" id="logout-btn">Sair</button>
+        <div class="auth-buttons">
+            <button class="login-btn">Entrar</button>
+            <button class="register-btn">Cadastrar</button>
+        </div>
+
+        <div id="floating-balance">
+                Saldo: R$<span id="user-balance">100.00</span>
         </div>
         
     </nav>
@@ -59,9 +60,7 @@
                 <a href="/loading/loading.html"><button class="odds-btn">Ver Odds</button></a>
                 </div>
             </div>
-        </section>
-
-        <section class="promotions">
+        
             <h2>Bônus do Dia</h2>
             <div class="promo-card">
                 <h3>Bônus na Betagoras</h3>
@@ -88,6 +87,56 @@
             <p>&copy; 2024 Betágoras. Todos os direitos reservados.</p>
         </div>
     </footer>
+    
+<!-- Login  -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Faça login em sua conta</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="email">CPF ou Endereço de Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="primary-btn">Entrar</button>
+        </form>
+        <p>---------------------------------- Ou ----------------------------------</p>
+        <div class="social-login">
+            <button class="btn social-btn">Google</button>
+            <button class="btn social-btn">Steam</button>
+            <button class="btn social-btn">Twitch</button>
+        </div>
+        <p>Não tem uma conta? <a href="#" id="open-register">Crie uma agora!</a></p>
+    </div>
+</div>
+
+<!-- Register -->
+<div id="register-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-register">&times;</span>
+        <h2>Crie uma nova conta</h2>
+        <form id="register-form">
+            <div class="input-group">
+                <label for="register-email">CPF ou Endereço de Email</label>
+                <input type="text" id="register-email" name="register-email" required>
+            </div>
+            <div class="input-group">
+                <label for="register-password">Senha</label>
+                <input type="password" id="register-password" name="register-password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirme a Senha</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="primary-btn">Cadastrar</button>
+        </form>
+        <p>Já tem uma conta? <a href="#" id="open-login">Faça login!</a></p>
+    </div>
+</div>
 
     <script src="index.js"></script>
 </body>

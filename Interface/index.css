@@ -203,16 +203,217 @@ footer {
   background-color: #c0392b;
 }
 #user-balance {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
-  color: #ffb84d; /* Cor destacada para o saldo */
-  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff; /* Cor destacada para o saldo */
+  background: rgba(0, 0, 0, 0.1);
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: transform 0.2s, color 0.3s;
 }
 
 #user-balance:hover {
   transform: scale(1.1);
-  color: #ff8800; /* Cor ao passar o mouse */
+  color: #000000; /* Cor ao passar o mouse */
+}
+
+#floating-balance {
+  position: fixed;
+  top: 11%;
+  right: 20px;
+  background-color: #ee5d09;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  transform: translateY(-50%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 1000; /* Para que esteja sempre visível */
+}
+
+#floating-balance:hover {
+  background-color: #ff8800;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Modal Container */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #000;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #e45310;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #e45310;
+  cursor: pointer;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.social-btn {
+  background-color: #e45310;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.social-btn:hover {
+  background-color: #ff8800;
+}
+
+/* Modal Container (aplica tanto para login quanto para cadastro) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #000;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #e45310;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Close Button */
+.close, .close-register {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus,
+.close-register:hover, .close-register:focus {
+    color: #e45310;
+    cursor: pointer;
+}
+
+/* Form Inputs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Primary Button (aplica tanto para login quanto para cadastro) */
+.primary-btn {
+    background-color: #e45310;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.primary-btn:hover {
+    background-color: #ff8800;
+}
+
+/* Link para trocar entre login e cadastro */
+.modal a {
+    color: #e45310;
+    text-decoration: none;
+}
+
+.modal a:hover {
+    text-decoration: underline;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.social-btn {
+    background-color: #e45310;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.social-btn:hover {
+    background-color: #ff8800;
 }

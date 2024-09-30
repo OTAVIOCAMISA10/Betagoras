@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="usu.css">
+</head>
+<body>
+    <div class="container fade-in">
+        
+        <h2 id="form-title">Cadastro de Usuário</h2>
+
+        <!-- Formulário de Cadastro -->
+        <form id="registerForm">
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+            <label for="confirmPassword">Confirmar Senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <!-- Formulário de Login (invisível por padrão) -->
+        <form id="loginForm" style="display: none;">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail" placeholder="Digite seu email" required>
+
+            <label for="loginPassword">Senha:</label>
+            <input type="password" id="loginPassword" name="loginPassword" placeholder="Digite sua senha" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <!-- Mensagem de erro ou sucesso -->
+        <p id="message"></p>
+
+        <!-- Link para alternar entre Cadastro e Login -->
+        <a id="toggleLink" class="toggle-link">Já tem uma conta? Entre aqui</a>
+    </div>
+
+    <script src="usu.js"></script>
+</body>
+</html>
