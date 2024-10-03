@@ -352,7 +352,7 @@ footer {
     cursor: pointer;
 }
 
-/* Form Inputs */
+/* Entradas de formulário */
 .input-group {
     margin-bottom: 15px;
 }
@@ -397,7 +397,7 @@ footer {
     text-decoration: underline;
 }
 
-/* Social Login Buttons */
+/* Botões de login social */
 .social-login {
     display: flex;
     justify-content: space-around;

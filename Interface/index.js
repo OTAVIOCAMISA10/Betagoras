@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
    // Função para adicionar uma pequena animação ao saldo ao ser atualizado
 function animateBalanceUpdate() {
     const balanceSpan = document.getElementById('user-balance');
-    balanceSpan.style.transition = 'none'; // Reset any previous transition
-    balanceSpan.style.transform = 'scale(1.2)'; // Small scale up effect
+    balanceSpan.style.transition = 'none'; // Redefinir qualquer transição anterior
+    balanceSpan.style.transform = 'scale(1.2)'; // Efeito de aumento de pequena escala
     setTimeout(() => {
-        balanceSpan.style.transition = 'transform 0.2s ease'; // Smooth transition
-        balanceSpan.style.transform = 'scale(1)'; // Return to normal size
+        balanceSpan.style.transition = 'transform 0.2s ease'; // Transição suave
+        balanceSpan.style.transform = 'scale(1)'; // Voltar ao tamanho normal
     }, 150);
 }
 
@@ -41,30 +41,30 @@ function updateUserBalance() {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Modal elements
+    // Elementos modal
     const modal = document.getElementById('login-modal');
     const closeBtn = document.querySelector('.close');
     const loginForm = document.getElementById('login-form');
 
-    // Show modal on login button click
+    // Mostrar modal ao clicar no botão de login
     document.querySelector('.login-btn').addEventListener('click', function (e) {
         e.preventDefault();
         modal.style.display = 'block';
     });
 
-    // Close modal when the 'X' is clicked
+    //Fechar modal quando o 'X' for clicado
     closeBtn.addEventListener('click', function () {
         modal.style.display = 'none';
     });
 
-    // Close modal when clicking outside of the modal content
+    // Fechar modal ao clicar fora do conteúdo modal
     window.addEventListener('click', function (e) {
         if (e.target == modal) {
             modal.style.display = 'none';
         }
     });
 
-    // Handle form submission (for example purposes, simply close the modal)
+    // Lidar com o envio do formulário (para fins de exemplo, basta fechar o modal)
     loginForm.addEventListener('submit', function (e) {
         e.preventDefault();
         alert('Login efetuado com sucesso!');
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Elements for register modal
+    // Elementos para modal de registro
     const closeRegisterBtn = document.querySelector('.close-register');
     const registerForm = document.getElementById('register-form');
     const switchToLogin = document.getElementById('switch-to-login');
@@ -82,38 +82,39 @@ document.addEventListener('DOMContentLoaded', function () {
     const openRegisterLink = document.getElementById('open-register');
     const openLoginLink = document.getElementById('open-login');
 
-    // Show register modal when clicking on "Crie uma agora!" in the login modal
+    
+     //Mostra o modal de cadastro ao clicar 
     document.querySelector('.register-btn').addEventListener('click', function (e) {
         e.preventDefault();
         registerModal.style.display = 'block';
     });
 
-    // Close register modal when the 'X' is clicked
+    // Fecha o modal de registro quando o 'X' é clicado
     closeRegisterBtn.addEventListener('click', function () {
         registerModal.style.display = 'none';
     });
 
-    // Close register modal when clicking outside of the modal content
+    // Fechar registro modal ao clicar fora do conteúdo modal
     window.addEventListener('click', function (e) {
         if (e.target == registerModal) {
             registerModal.style.display = 'none';
         }
     });
 
-    // Switch back to login modal
+    // Voltar para o modo de login
     switchToLogin.addEventListener('click', function (e) {
         e.preventDefault();
         registerModal.style.display = 'none';
         modal.style.display = 'block';
     });
 
-    // Handle form submission (for example purposes, simply close the modal)
+    // Lidar com o envio do formulário (para fins de exemplo, basta fechar o modal)
     registerForm.addEventListener('submit', function (e) {
         e.preventDefault();
         alert('Conta cadastrada com sucesso!');
         registerModal.style.display = 'none';
     });
-      // Abrir o modal de cadastro a partir do link no modal de login
+      // Abra o modal de cadastro a partir do link no modal de login
       openRegisterLink.addEventListener('click', function (e) {
         e.preventDefault();
         loginModal.style.display = 'none';
