@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: #282828;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-inline-end: 350px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.user-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.user-panel button {
+  background-color: #e74c3c;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-panel button:hover {
+  background-color: #c0392b;
+}
+
+#user-balance {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffb84d; /* Cor destacada para o saldo */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: transform 0.2s, color 0.3s;
+}
+
+#user-balance:hover {
+  transform: scale(1.1);
+  color: #ff8800; /* Cor ao passar o mouse */
+}
+
+.matches-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px;
+}
+
+.matches-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  height: 30px;
+  width: 440px;
+}
+
+.data {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.matches-content {
+  display: flex;
+  width: 440px;
+}
+
+.team-table {
+  display: block;
+}
+
+.team-header-th {
+  border-bottom: 1.8px solid #616161;
+  height: 30px;
+}
+
+.col-matches-position {
+  width: 30px;
+}
+
+.td-name-team {
+  border-bottom: 1.8px solid #616161;
+  display: flex;
+}
+
+.number-team {
+  font-size: 15x;
+  text-align: center;
+  border-bottom: 1.8px solid #616161;
+}
+
+.img-team {
+  margin: 8px 7px 8px 0;
+  text-align: center;
+  height: 26px;
+  width: 26px;
+}
+
+.name-team {
+  font-size: 15px;
+  margin: 12px 0 11px 2px;
+  text-align: center;
+}
+
+.statistics-table {
+  display: block;
+  margin-left: 10px;
+}
+
+.statistics-header {
+  border-bottom: 1.8px solid #616161;
+  height: 30px;
+}
+
+.statistics-team th {
+  display: table-cell;
+  padding: 0 18px;
+  border-bottom: 1.8px solid #616161;
+}
+
+.statistics-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistics-body tr {
+  display: table-row;
+  margin-left: 3px;
+  margin: 18.5px 7px 8px 0;
+}
+
+.statistics-body td {
+  display: table-cell;
+  margin-left: 3px;
+  margin: 18px 8px 8px 0;
+}
+
+.statistics-body tr td {
+  padding: 0 18px;
+  border-bottom: 1.8px solid #616161;
+}
+
+/*.matches-subHeader {
+  background-color: #333;
+  width: 440px;
+  border-bottom: 1.5px solid #616161;
+  display: flex;
+}
+
+.matches-subHeader-team {
+  align-items: center;
+}
+
+.matches-subHeader-team h1 {
+  font-size: 14px;
+  color: #bbbbbb;
+  margin: 6px 0 6px 16px;
+}
+
+.matches-subHeader-statics {
+  display: flex;
+  align-items: center;
+}
+
+.matches-subHeader-statics h1 {
+  font-size: 14px;
+  color: #bbbbbb;
+  margin: 6px 16px 6px 0;
+}
+
+.matches-subHeader div:first-of-type {
+  margin-right: auto;
+}
+
+.matches-content {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+}
+
+.matches {
+  padding: 3px 0px 3px 6px;
+  display: flex;
+  border-bottom: 1.5px solid #616161;
+  align-items: center;
+  cursor: pointer;
+}
+
+.matches:hover {
+  background-color: #636363;
+}
+
+.matches:last-child {
+  border-bottom: none;
+}
+
+.matches div:first-of-type {
+  margin-right: auto;
+  border-bottom: none;
+}
+
+.matches-team {
+  display: flex;
+}
+
+.matches-team h1 {
+  font-size: 14px;
+  color: #bbbbbb;
+  margin: 10px;
+  align-items: center;  
+}
+
+.matches-team img {
+  width: 26px;
+  height: 26px;
+  padding: 3px 0 3px 0;
+}
+
+.matches-statistics {
+  display: flex;
+}
+
+.matches-statistics h1 {
+  margin: 6px 15px 6px 0;
+  font-size: 14px;
+  color: #bbbbbb;
+  align-items: center;
+}*/
