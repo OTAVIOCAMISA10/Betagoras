@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Betágoras Odds</title>
+    <link rel="stylesheet" href="odds.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Betágoras</div>
+        <ul class="nav-links">
+          <li><a href="/Interface/index.html">Início</a></li>
+          <li><a href="#">Esportes</a></li>
+          <li><a href="#">Cassino</a></li>
+          <li><a href="#">Suporte</a></li>
+        </ul>
+        <div class="user-panel">
+          <span>Saldo <span id="user-balance">100.00</span></span>
+          <button class="btn" id="logout-btn">Sair</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="matches-section">
+        <div class="matches-header">
+          <h1 class="data">Brasileirão Serie A</h1>
+        </div>
+        <div class="matches-content">
+          <table class="team-table">
+            <colgroup>
+              <col class="col-matches-position" />
+              <col class="col-matches-team" />
+            </colgroup>
+            <thead class="team-header">
+              <tr>
+                <th class="team-header-th" colspan="2">CLASSIFICAÇÃO</th>
+              </tr>
+            </thead>
+            <tbody class="matches" id="matchesBody"></tbody>
+          </table>
+
+          <table class="statistics-table">
+            <thead class="statistics-header">
+              <tr class="statistics-team">
+                <th>PG</th>
+                <th>J</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+              </tr>
+            </thead>
+            <tbody class="statistics-body" id="statisticsBody"></tbody>
+          </table>
+        </div>
+        <!--<div class="matches-subHeader">
+          <div class="matches-subHeader-team">
+            <h1>CLASSIFICAÇÃO</h1>
+          </div>
+          <div class="matches-subHeader-statics">
+            <h1>PG</h1>
+            <h1>J</h1>
+            <h1>V</h1>
+            <h1>E</h1>
+            <h1>D</h1>
+          </div>
+        </div>
+        <div class="matches-content" id="matchesContent"></div>-->
+      </section>
+    </main>
+
+    <script src="odds.js"></script>
+  </body>
+</html>
